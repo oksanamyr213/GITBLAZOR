@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyGitBlazorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b3ce9935adff1796f1f33972d457a5b2bfb0e4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a01b2d5a4d6b3d2b8e82e1287bac7a39b13f174")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyGitBlazorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyGitBlazorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
