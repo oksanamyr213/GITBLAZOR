@@ -1,0 +1,54 @@
+﻿@page "/books/create"
+@using Microsoft.EntityFrameworkCore
+@using BlazorApp1forGit.Models
+@inject IDbContextFactory<BlazorApp1forGit.Data.BlazorApp1forGitContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create</PageTitle>
+
+<h1>Create</h1>
+
+<h2>Book</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Book" OnValidSubmit="AddBook" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" role="alert"/>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label> 
+                <InputText id="title" @bind-Value="Book.Title" class="form-control" /> 
+                <ValidationMessage For="() => Book.Title" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="isbn" class="form-label">ISBN:</label> 
+                <InputText id="isbn" @bind-Value="Book.ISBN" class="form-control" /> 
+                <ValidationMessage For="() => Book.ISBN" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="edition" class="form-label">Edition:</label> 
+                <InputText id="edition" @bind-Value="Book.Edition" class="form-control" /> 
+                <ValidationMessage For="() => Book.Edition" class="text-danger" /> 
+            </div>        
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <a href="/books">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private Book Book { get; set; } = new();
+
+    // To protect from overposting attacks, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    private async Task AddBook()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Book.Add(Book);
+        await context.SaveChangesAsync();
+        NavigationManager.NavigateTo("/books");
+    }
+}

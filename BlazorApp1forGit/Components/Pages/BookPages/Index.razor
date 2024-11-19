@@ -1,0 +1,38 @@
+﻿@page "/books"
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using BlazorApp1forGit.Models
+@using BlazorApp1forGit.Data
+@implements IAsyncDisposable
+@inject IDbContextFactory<BlazorApp1forGit.Data.BlazorApp1forGitContext> DbFactory
+
+<PageTitle>Index</PageTitle>
+
+<h1>Index</h1>
+
+<p>
+    <a href="books/create">Create New</a>
+</p>
+
+<QuickGrid Class="table" Items="context.Book">
+    <PropertyColumn Property="book => book.Title" />
+    <PropertyColumn Property="book => book.ISBN" />
+    <PropertyColumn Property="book => book.Edition" />
+
+    <TemplateColumn Context="book">
+        <a href="@($"books/edit?id={book.Id}")">Edit</a> |
+        <a href="@($"books/details?id={book.Id}")">Details</a> |
+        <a href="@($"books/delete?id={book.Id}")">Delete</a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private BlazorApp1forGitContext context = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}
