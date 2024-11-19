@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\MyGitBlazorApp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\MyGitBlazorApp.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net8.0\appsettings.json" />
+    <Content Include="bin\Debug\net8.0\MyGitBlazorApp.deps.json" />
+    <Content Include="bin\Debug\net8.0\MyGitBlazorApp.runtimeconfig.json" />
+    <Content Include="bin\Debug\net8.0\MyGitBlazorApp.staticwebassets.runtime.json" />
+    <Content Include="obj\Debug\net8.0\MyGitBlazorApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\MyGitBlazorApp.sourcelink.json" />
+    <Content Include="obj\Debug\net8.0\scopedcss\bundle\MyGitBlazorApp.styles.css" />
+    <Content Include="obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css" />
+    <Content Include="obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css" />
+    <Content Include="obj\Debug\net8.0\scopedcss\projectbundle\MyGitBlazorApp.bundle.scp.css" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.development.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.pack.json" />
+    <Content Include="obj\MyGitBlazorApp.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\MyGitBlazorApp.dll" />
+    <None Include="bin\Debug\net8.0\MyGitBlazorApp.exe" />
+    <None Include="bin\Debug\net8.0\MyGitBlazorApp.pdb" />
+    <None Include="MyGitBlazorApp.sln" />
+    <None Include="obj\Debug\net8.0\apphost.exe" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.assets.cache" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.dll" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net8.0\MyGitBlazorApp.pdb" />
+    <None Include="obj\Debug\net8.0\refint\MyGitBlazorApp.dll" />
+    <None Include="obj\Debug\net8.0\ref\MyGitBlazorApp.dll" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.build.MyGitBlazorApp.props" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyGitBlazorApp.props" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyGitBlazorApp.props" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.MyGitBlazorApp.Microsoft.AspNetCore.StaticWebAssets.props" />
+    <None Include="obj\MyGitBlazorApp.csproj.nuget.g.props" />
+    <None Include="obj\MyGitBlazorApp.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+</Project>

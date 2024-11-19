@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\myronovy\\source\\repos\\oksanamyr213\\Fall-2024\\MyGitBlazorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyGitBlazorApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyGitBlazorApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\myronovy\\source\\repos\\oksanamyr213\\Fall-2024\\MyGitBlazorApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\myronovy\\source\\repos\\oksanamyr213\\Fall-2024\\MyGitBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myronovy\\source\\repos\\oksanamyr213\\Fall-2024\\MyGitBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myronovy\\source\\repos\\oksanamyr213\\Fall-2024\\MyGitBlazorApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyGitBlazorApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MyGitBlazorApp.props",
+      "PackagePath": "build\\MyGitBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MyGitBlazorApp.props",
+      "PackagePath": "buildMultiTargeting\\MyGitBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MyGitBlazorApp.props",
+      "PackagePath": "buildTransitive\\MyGitBlazorApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
